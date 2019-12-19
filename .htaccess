@@ -1,0 +1,8 @@
+<Files ".ht*">
+	deny from all
+</Files>
+
+Options -Indexes
+
+Redirect 301 /asset/ /bpjskesehatan/redirect.html
+Redirect 301 /database/ /bpjskesehatan/redirect.html
