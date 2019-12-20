@@ -110,7 +110,7 @@ if(isset($csrfErr) && empty($csrfErr))
         }
 
 
-        $query = "INSERT INTO users (uname,password,email) VALUE (?,?,?)";
+        $query = "INSERT INTO users VALUES (NULL,?,?,?)";
         $statement = $connection->prepare($query);
         $statement->bind_param("sss",$username,$hash_pass,$email);
         $statement->execute();

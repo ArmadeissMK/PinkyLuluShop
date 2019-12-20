@@ -2,11 +2,10 @@
 
 $host = "localhost";
 $username = "root";
-$password = "pinkylulushop";
+$password = "PinkyLu2$hop";
 $db_name = "users";
 
-$hashpass = sha1($password);
-$connection = new mysqli($host,$username,$hashpass,$db_name);
+$connection = new mysqli($host,$username,$password,$db_name);
 
 if( !$connection ){
     die("Database Not Found!");
